@@ -2,6 +2,7 @@ import React from 'react';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
 import { robots } from './robots'; 
+import './App.css';
 
 
 // const state = {
@@ -32,7 +33,7 @@ render() {
   })
   return (
     <div className="tc">
-      <h2>Robot Friends</h2>
+      <h2 className="f2">Robot Friends</h2>
       <SearchBox searchchange={this.onSearchChange}/>
       <CardList robots={filterRobots}/>
     </div>
